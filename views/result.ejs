@@ -1,0 +1,20 @@
+<html>
+    <head>
+
+    </head>
+
+    <body>
+        <h2>Submitted Information</h2>
+        <% for (var i in x){ %>
+        <h4>Name: <%= x[i].name %></h4>
+        
+        <h4>Dojo Location: <%= x[i].location %></h4>
+        
+        <h4>Favorite Language: <%= x[i].language %></h4>
+
+        <h4>Comment: <%= x[i].comment %></h4>
+        <% } %>
+
+        <button onclick="location.href = 'http://localhost:8000/'">Go back</button>
+    </body>
+</html>
